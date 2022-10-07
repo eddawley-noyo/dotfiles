@@ -23,9 +23,9 @@ zshrc() {
     echo "-----------------------------------------------------------"
     apt update
     echo "==========================================================="
-    echo "             install zsh and poweline fonts                "
+    echo "             install zsh                                   "
     echo "-----------------------------------------------------------"
-    DEBIAN_FRONTEND=noninteractive apt install -y zsh powerline fonts-powerline
+    apt install -y zsh
     echo "==========================================================="
     echo "             install ohmyzsh                               "
     echo "-----------------------------------------------------------"
