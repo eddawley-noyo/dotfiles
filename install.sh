@@ -19,9 +19,17 @@ create_symlinks() {
 
 zshrc() {
     echo "==========================================================="
-    echo "             install Powerline fonts                       "
+    echo "             update apt                                    "
     echo "-----------------------------------------------------------"
-    apt install powerline fonts-powerline -y
+    apt update
+    echo "==========================================================="
+    echo "             install zsh and poweline fonts                "
+    echo "-----------------------------------------------------------"
+    apt install zsh powerline fonts-powerline -y
+    echo "==========================================================="
+    echo "             install ohmyzsh                               "
+    echo "-----------------------------------------------------------"
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     echo "==========================================================="
     echo "             cloning zsh-autosuggestions                   "
     echo "-----------------------------------------------------------"
