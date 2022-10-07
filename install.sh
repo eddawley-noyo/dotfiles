@@ -19,6 +19,10 @@ create_symlinks() {
 
 zshrc() {
     echo "==========================================================="
+    echo "             install Powerline fonts                       "
+    echo "-----------------------------------------------------------"
+    sudo apt-get install powerline fonts-powerline -y
+    echo "==========================================================="
     echo "             cloning zsh-autosuggestions                   "
     echo "-----------------------------------------------------------"
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
