@@ -21,7 +21,7 @@ zshrc() {
     echo "==========================================================="
     echo "             install Powerline fonts                       "
     echo "-----------------------------------------------------------"
-    sudo apt-get install powerline fonts-powerline -y
+    apt install powerline fonts-powerline -y
     echo "==========================================================="
     echo "             cloning zsh-autosuggestions                   "
     echo "-----------------------------------------------------------"
